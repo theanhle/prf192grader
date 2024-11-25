@@ -9,26 +9,26 @@ se1909ws1/
 │   └── prob3.c
 └── student_solutions/
     ├── invalid_files/
-    │    ├── ce123459pro1.c
-    │    ├── ce123459Prob2.c
-    │    ├── ce123459prob3.c.c
-    │    └── ..
+    │   ├── ce123459pro1.c
+    │   ├── ce123459Prob2.c
+    │   ├── ce123459prob3.c.c
+    │   └── ..
     └── valid_files/
-         ├── prob1
-         │    ├── ce123456prob1.c
-         │    ├── ce123457prob1.c
-         │    └── ..
-         ├── prob2
-         │    ├── ce123456prob2.c
-         │    ├── ce123457prob2.c
-         │    └── ..
-         ├── prob3
-         │    ├── ce123456prob3.c
-         │    ├── ce123457prob3.c
-         │    └── ..
-         ├── result.json
-         ├── result.xlsx
-         └── testcases.json    
+        ├── prob1
+        │   ├── ce123456prob1.c
+        │   ├── ce123457prob1.c
+        │   └── ..
+        ├── prob2
+        │   ├── ce123456prob2.c
+        │   ├── ce123457prob2.c
+        │   └── ..
+        ├── prob3
+        │   ├── ce123456prob3.c
+        │   ├── ce123457prob3.c
+        │   └── ..
+        ├── result.json
+        ├── result.xlsx
+        └── testcases.json    
 ```
 Trong đó:
 1. Folder `problems` chứa đề bài (`se1909ws1.pdf`) và các bài giảng viên làm trước để test đề và sinh testcases (`prob1.c`, `prob2.c`, `prob3.c`).
