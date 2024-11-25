@@ -14,15 +14,15 @@ se1909ws1/
     │   ├── ce123459prob3.c.c
     │   └── ..
     └── valid_files/
-        ├── prob1
+        ├── prob1/
         │   ├── ce123456prob1.c
         │   ├── ce123457prob1.c
         │   └── ..
-        ├── prob2
+        ├── prob2/
         │   ├── ce123456prob2.c
         │   ├── ce123457prob2.c
         │   └── ..
-        ├── prob3
+        ├── prob3/
         │   ├── ce123456prob3.c
         │   ├── ce123457prob3.c
         │   └── ..
