@@ -38,10 +38,6 @@ def run_c_program(c_file_path, testcases, timeout=10):
                                 c_file_path,
                                 "-o",
                                 c_file_path[:-2] + ".out",
-                                "-L.",
-                                "-lmystring",
-                                "-include",
-                                "mystring.h",
                                 "-Wno-implicit-function-declaration",
                                 "-Wimplicit-function-declaration",
                                 "-Wno-format",
@@ -53,8 +49,6 @@ def run_c_program(c_file_path, testcases, timeout=10):
     if cp_result.returncode != 0:
         cp_err_text = cp_result.stderr.decode("utf-8", errors="ignore")
         print(colored(f"cp_err: {cp_err_text}", "red"))
-        if "#include <conio.h>" in cp_err_text:
-            print(colored(f"THIS IS ERROR OF USING CONIO.H. PLEASE CHECK THIS CODE MANUALLY!", "magenta"))
         return {
             "cp_err": True,
             "cp_err_text": cp_err_text,

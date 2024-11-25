@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-code="./code"
+code=$1
 sol="./student_solutions"
 
 mkdir -p $sol
