@@ -6,39 +6,23 @@ se1909ws1/
 │   ├── se1909ws1.pdf
 │   ├── prob1.c
 │   ├── prob2.c
-│   └── prob3.c
-└── student_solutions/
-    ├── invalid_files/
-    │   ├── ce123459pro1.c
-    │   ├── ce123459Prob2.c
-    │   ├── ce123459prob3.c.c
-    │   └── ..
-    └── valid_files/
-        ├── prob1/
-        │   ├── ce123456prob1.c
-        │   ├── ce123457prob1.c
-        │   └── ..
-        ├── prob2/
-        │   ├── ce123456prob2.c
-        │   ├── ce123457prob2.c
-        │   └── ..
-        ├── prob3/
-        │   ├── ce123456prob3.c
-        │   ├── ce123457prob3.c
-        │   └── ..
-        ├── result.json
-        ├── result.xlsx
-        └── testcases.json    
+│   ├── prob3.c
+│   └── testcases.json
+├── zipfiles/
+│   ├── SE1909-assignment_1729356421428.zip
+│   ├── SE1909-assignment_1729356433912.zip
+│   ├── SE1909-assignment_1729356443655.zip
+│   └── ..
+└── results/
+    ├── result.json
+    └── result.xlsx    
 ```
 Trong đó:
-1. Folder `problems` chứa đề bài (`se1909ws1.pdf`) và các bài giảng viên làm trước để test đề và sinh testcases (`prob1.c`, `prob2.c`, `prob3.c`).
-2. Folder `student_solutions` gồm các file testcases, file bài làm của sinh viên, và các file kết quả:
-    - `testcases.json`: file testcase
-    - Folder `invalid_files` chứa các file bài làm đặt tên sai
-    - Folder `valid_files` gồm các sub-folder `prob1`, `prob2`, `prob3`, .. chứa các file bài làm đặt tên đúng
-    - Hai file kết quả chấm được sinh ra bởi chương trình chấm tự động
-        -  `result.json`: file kết quả chạy các testcase trên source file của sinh viên
-        -  `result.xlsx`: file thống kê điểm của sinh viên
+1. Folder `problems`: chứa đề bài (`se1909ws1.pdf`), các bài giảng viên làm trước để test đề và sinh testcases (`prob1.c`, `prob2.c`, `prob3.c`), và file testcases.
+2. Folder `zipfiles`: chứa các file bài làm của sinh viên download về từ EduNext
+3. Folder `results`: chứa hai file kết quả chấm được sinh ra bởi chương trình chấm tự động
+   -  `result.json`: file kết quả chạy các testcase trên source file của sinh viên
+   -  `result.xlsx`: file thống kê điểm của sinh viên
 
 ### Hướng dẫn nộp bài Workshop trên Edunext
 
