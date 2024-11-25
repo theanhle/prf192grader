@@ -35,7 +35,7 @@ Trong đó:
 2. Folder `student_solutions` gồm các file testcases, file bài làm của sinh viên, và các file kết quả:
     - `testcases.json`: file testcase
     - Folder `invalid_files` chứa các file bài làm đặt tên sai
-    - Folder `valid_files` chứa ba sub-folder `prob1`, `prob2`, `prob3` chứa các file bài làm đặt tên đúng
+    - Folder `valid_files` gồm các sub-folder `prob1`, `prob2`, `prob3`, .. chứa các file bài làm đặt tên đúng
     - Hai file kết quả chấm được sinh ra bởi chương trình chấm tự động
         -  `result.json`: file kết quả chạy các testcase trên source file của sinh viên
         -  `result.xlsx`: file thống kê điểm của sinh viên
@@ -64,7 +64,7 @@ Giả sử mã sinh viên là `ce123456` và có 3 problems trong bài workshop,
 
 Thực hiện các bước 1, 2 như trong hướng dẫn nộp bài Workshop ở trên. Sau đó submit folder `ce123456`.
 
-:warning: Lưu ý
+### :warning: Lưu ý quan trọng
 1. Các bài nộp sai quy định trên sẽ không có điểm.
 2. Trong hàm main không được return một số khác 0 vì điều đó có nghĩa là chương trình kết thúc có lỗi. Hệ thống chấm sẽ coi đó là lỗi và không tính điểm.
 3. Hệ điều hành cần để chế độ hiển thị phần đuôi file (file extension) để biết file loại nào (.c, .cpp, cbp, ..) và không nộp nhầm hoặc đặt tên thừa (ví dụ ce123456prob1.c.c). (To show file extensions on Windows 11, open File Explorer, and then click View > Show > File Name Extensions)
@@ -135,30 +135,3 @@ Thực hiện các bước 1, 2 như trong hướng dẫn nộp bài Workshop �
 6. Input đầu vào của tất cả các testcase đều có ký tự xuống dòng ,`\n`, ở cuối (giống hệt khi sinh viên làm việc với CodeBlock). Sinh viên lưu ý khi sử dụng các function đọc dữ liệu mà đọc cả ký tự \n (ví dụ fgets). Sinh viên nên dùng function đọc có định dạng scanf.
 7. Không dùng hàm getch(); khiến chương trình không thể kết thúc cho đến khi ấn phím.
 8. Không dùng các thư viện, hàm không chuẩn (non-standard functions), ví dụ: conio.h, strlwr, strupr, strrev, ..
-
-### Hướng dẫn chấm bài trên Google Colab
-
-Ví dụ chấm bài workshop 5 của lớp se1912:
-
-1. Download bài làm của sinh viên từ Edunext (các file .zip)
-2. Trên Google Colab tạo hai thư mục `se1912ws5`, `grader`
-   ```bash
-   !mkdir se1912ws5 grader
-   ```
-3. Upload các file zip bài làm của sinh viên vào thư mục `se1912ws5`. Upload các file mã nguồn chấm bài (`prf192.py`, `preprocess.sh`, ...) vào thư mục `grader`
-4. Dùng file `preprocess.sh` để tự động việc giải nén, validate tên file, và copy các file bài làm vào các thư mục tương ứng.
-   ```bash
-   !chmod +x grader/preprocess.sh
-   !grader/preprocess.sh se1912ws5
-   ```   
-   Sau khi thực hiện sẽ tạo ra folder `student_solutions` trong đó có folder `invalid_files` và folder `valid_files`.   
-5. Upload file `testcase.json` vào thư mục `valid_files`
-6. Chạy chương trình chấm tự động
-   ```bash
-   %cd grader
-   !python prf192.py ../student_solutions/valid_files --timeout 5
-   ```
-   Hai options:
-    - `--timeout`: mặc định là 10s
-    - `--show_output`: hiển thị kết quả chạy các testcase
-7. Cuối cùng nhận được các file kết quả: `result.json`, `result.xlsx`.
