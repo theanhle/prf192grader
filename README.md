@@ -114,7 +114,7 @@ Thực hiện các bước 1, 2 như trong hướng dẫn nộp bài Workshop �
         gold_out = preprocess(gold_out)
         out = preprocess(out)
 
-        return out  gold_out
+        return out == gold_out
     ```
 6. Input đầu vào của tất cả các testcase đều có ký tự xuống dòng ,`\n`, ở cuối (giống hệt khi sinh viên làm việc với CodeBlock). Sinh viên lưu ý khi sử dụng các function đọc dữ liệu mà đọc cả ký tự \n (ví dụ fgets). Sinh viên nên dùng function đọc có định dạng scanf.
 7. Không dùng hàm getch(); khiến chương trình không thể kết thúc cho đến khi ấn phím.
